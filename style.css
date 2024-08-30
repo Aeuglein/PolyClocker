@@ -1,0 +1,446 @@
+:root{
+    --ctrlDistance: 3em
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-height: fit-content;
+    min-height: 100vh;
+    border: 2px solid #001122}
+
+*{
+
+font-family: 'Montserrat', sans-serif;
+
+}
+
+* :not(input, select, button){color: white}
+
+input, select, button{
+    color: grey
+}
+
+.metroWrapper{
+    display: flex;
+    align-items: center;
+  
+}
+
+input[type=number]{
+    
+    height: 25px !important;
+    border-radius: 5px;
+    border: 1px solid white !important;
+    color: grey !important;
+    padding-right: 2px !important;
+
+
+}
+
+.cellContainer{
+    display:flex;
+    justify-content: space-between;
+    gap: 4px;
+    width: 100%;
+}
+
+
+
+.cell{
+   /*  border: 1px solid white; */
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    cursor:pointer;
+}
+
+.cell:hover{
+    box-shadow: inset 0px 0px 5px #FF0066;
+}
+
+.startSectionWrapper{
+    display: flex;
+    align-items: center;
+    
+}
+
+.leftMargin{
+    margin-left: 1em;
+}
+
+input[type=checkbox]{
+    width: 2.5em !important; 
+    height: 20px !important
+}
+
+input[type="checkbox"]:checked {
+    background-color: #FF0066;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #FF0066 !important
+  }
+
+  input[type="checkbox"]:focus{
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #FF0066 !important;
+
+  }
+
+  input[type="checkbox"]:hover{
+    cursor: pointer !important;
+
+  }
+
+
+
+h4{
+    width: 5em;
+    margin: 0px !important;
+}
+
+label{
+    font-weight: bold;
+
+} 
+
+.controlWrapper{
+  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+
+  
+ 
+}
+.controlSlider{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+   }
+
+    .controlSlider::-webkit-slider-thumb{
+  
+        -webkit-appearance: none;
+        background-color: #fe79ae;
+        height: 16px; 
+        width: 16px; 
+        border-radius: 5px;
+        cursor: pointer;}
+
+        .controlSlider::-webkit-slider-thumb:hover{
+  
+            -webkit-appearance: none;
+            background-color: #FF0066;
+            height: 16px; 
+            width: 16px; 
+            border-radius: 5px;
+            cursor: pointer;}
+
+            .controlSlider::-webkit-slider-thumb:active{
+  
+                -webkit-appearance: none;
+                background-color: #FF0066;
+                height: 22px; 
+                width: 22px; 
+                border-radius: 5px;
+                cursor: pointer;}
+
+    .controlSlider::-moz-range-thumb{
+        -moz-appearance: none;
+        border: 0px;
+        background-color:  #fe79ae;
+        height: 16px; 
+        width: 16px; 
+        border-radius: 5px;
+        cursor: pointer
+    }
+
+    .controlSlider::-moz-range-thumb:hover{
+        -moz-appearance: none;
+        background: #FF0066;
+        height: 16px; 
+        width: 16px; 
+        border-radius: 5px;
+        cursor: pointer;}
+
+    .controlSlider::-moz-range-thumb:active{
+        -moz-appearance: none;
+        background: #FF0066;;
+        height: 22px; 
+        width: 22px; 
+        border-radius: 5px;
+        cursor: pointer;}
+
+        .controlBox{
+            margin-right: var(--ctrlDistance);
+        }
+
+    
+
+
+select{
+    -webkit-user-select: none;
+    width: 100% !important;
+    height: 25px !important;
+    color: grey !important;
+    font-size: 12px !important; 
+}
+
+
+.metroSuperContainer{
+    border: 0px groove #489de3 !important;
+    border-radius: 10px !important;
+    background-color: #28537e;
+    box-shadow: inset 1px 3px 10px #fe79ae;
+}
+
+
+
+.form-check{
+    margin: 0px !important
+}
+
+.verticalizer{
+
+    width: 5em; 
+}
+
+.form-control:focus {
+   /*  border-color: #FF0066 !important; */
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #FF0066 !important;
+  }
+
+  select:focus {
+  
+     border-color: white !important;
+     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #FF0066 !important;
+   }
+
+   .short{
+    width: fit-content
+   }
+
+   .centralizer{
+    height: 35px !important;
+    display: flex !important;
+    align-items: center !important;
+  
+  
+}
+
+.form-check{
+   
+    min-height: auto !important;
+}
+
+.form-check-input{
+    margin-top:0px;
+  
+    }
+    
+
+    .form-check-input:checked{
+        border-color:  white;
+    }
+
+
+
+.noMargin{
+    margin-right: 0px
+}
+
+.form-select{
+padding-block: 0px;
+}
+
+.fixerRight{width: 50px}
+.fixerLeft{width: 10px}
+
+h1{
+    font-weight: bolder;
+}
+
+h1>span{
+    font-size: 0.6em;
+}
+h5>span{
+    color: #fe79ae;
+}
+
+
+
+
+.toRight{
+    margin-left: auto;
+}
+
+.tooltip > div.tooltip-inner {
+    background-color: #fe79ae !important;
+    font-size: 0.7em;
+    height: 22px;
+    width: 5em;
+
+  }
+
+  .tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #fe79ae ;
+  }
+
+  .tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: #fe79ae ;
+  }
+
+  .tooltip.bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: #fe79ae ;
+  }
+
+  .tooltip.bs-tooltip-end .tooltip-arrow::before {
+    border-right-color: #fe79ae ;
+  }
+
+  .filler{
+    width: 100%;
+    height: 100%
+  }
+
+  .panel{
+    border: 2px groove #1b3855 !important;
+    border-radius: 10px !important;
+    background-color: #28537e;
+  }
+
+  .btn:hover{
+    background-color: white;
+    box-shadow: inset 0px 0px 5px #FF0066;
+
+  }
+
+.textRight{
+    text-align: end;
+    width: 100%;
+}
+
+.customOption:hover{
+    background-color: #FF0066 !important;
+    color: white !important;
+    border: 0px solid white !important;
+    box-shadow: inset 0px 0px 5px white !important;
+}
+
+.currentSelection{
+    background-color: rgb(178, 176, 176) !important;
+    color: white !important;
+    box-shadow: inset 0px 0px 5px black !important;
+}
+
+.fontControl{
+height: 23px;
+margin: 0px;
+}
+
+.startButtonContainer{
+    width: 100%;
+    display:flex;
+    justify-content: start;
+}
+
+.introText{
+text-align: justify;
+font-size: 1.5em;
+}
+
+
+
+.customSelectButton{
+    padding-block: 0px !important;
+    margin-bottom: 0px !important;
+
+}
+
+.customSelectButton:focus{
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #FF0066 !important;
+
+}
+
+
+ul{
+    margin-left: 0px;
+    padding-left: 1em;
+}
+
+@media (max-width: 600px){
+       :root{--ctrlDistance: 0.5em}
+       label{font-size: 12px;}
+       input[type=number]{font-size: 12px;}
+       .verticalizer{min-width: 50px; max-width:50px }
+       .customSelectButton{font-size: 12px !important; width: 5em !important}
+
+
+       .controlSlider::-webkit-slider-thumb{
+  
+    
+        height: 10px; 
+        width: 10px; 
+        border-radius: 2px;
+       }
+
+        .controlSlider::-webkit-slider-thumb:hover{
+            height: 10px; 
+            width: 10px; 
+            border-radius: 2px;
+  
+           }
+
+            .controlSlider::-webkit-slider-thumb:active{
+                height: 13px; 
+                width: 13px; 
+                border-radius: 3px}
+
+    .controlSlider::-moz-range-thumb{
+        height: 10px; 
+        width: 10px; 
+        border-radius: 2px;
+    }
+
+    .controlSlider::-moz-range-thumb:hover{
+        height: 10px; 
+        width: 10px; 
+        border-radius: 2px}
+
+    .controlSlider::-moz-range-thumb:active{
+        height: 13px; 
+        width: 13px; 
+        border-radius: 3px}
+
+        .toRight{
+    
+         margin-left: var(--ctrlDistance) !important
+     
+        }
+
+        .textRight{
+            text-align: start;
+            width: 100%;
+        }
+        .smallClear{
+            margin: 0px !important;
+ 
+        }
+        .metroSuperContainer{
+       padding-block: 10px !important;
+       padding-inline: 1em !important;
+        }
+
+} 

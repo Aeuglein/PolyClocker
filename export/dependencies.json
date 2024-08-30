@@ -1,0 +1,22 @@
+[
+  {
+    "id": "sf5",
+    "file": "media/E_snare_mono.wav"
+  },
+  {
+    "id": "sf4",
+    "file": "media/E_rim_mono.wav"
+  },
+  {
+    "id": "sf3",
+    "file": "media/E_kick_mono.wav"
+  },
+  {
+    "id": "sf2",
+    "file": "media/E_hihat_mono.wav"
+  },
+  {
+    "id": "sf1",
+    "file": "media/E_claves_mono.wav"
+  }
+]
